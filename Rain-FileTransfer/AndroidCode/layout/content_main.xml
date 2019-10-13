@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/gallerybackground"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/expandList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".1">
+
+        </ExpandableListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".65"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fileToUpload"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:paddingTop="20dp"
+                android:text="Upload File"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/uploadButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                app:srcCompat="@android:drawable/ic_menu_upload" />
+
+            <TextView
+                android:id="@+id/LocationFile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:paddingTop="20dp"
+                android:text="Select Folder"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
